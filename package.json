@@ -1,0 +1,24 @@
+{
+  "name": "attendance_management_system",
+  "version": "1.0.0",
+  "description": "- single page applicationの開発を経験する   - ただし、構成などは凝らない - cssアニメーションを使ってサイトをヌルヌルにする - Golangを使いたい！！",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okaki030/attendance-management-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Okaki030/attendance-management-system/issues"
+  },
+  "homepage": "https://github.com/Okaki030/attendance-management-system#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.4.2",
+    "create-react-app": "^3.1.0",
+    "material-table": "^1.50.0"
+  }
+}

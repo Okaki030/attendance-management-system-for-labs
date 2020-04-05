@@ -1,0 +1,84 @@
+/* 削除モーダル */
+.delete-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index:11;
+}
+
+.delete-modal-box {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    width: 480px;
+    padding-bottom: 60px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.delete-modal-introduction{
+    display: flex;
+    justify-content: center;
+    padding:50px;
+}
+
+.delete-attend-select-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.delete-modal-close-btn {
+    font-size: 13px;
+    color: #8491a5;
+    width: 200px;
+    padding: 16px 0;
+    border: 0;
+    background-color: #f0f4f9;
+    cursor: pointer;
+}
+  
+.delete-modal-close-btn:hover {
+    color: #8491a5;
+    background-color: #ccd9ea;
+}
+
+/* モーダル CSSTransition */
+.modal-animation-enter {
+    opacity:0;
+  }
+.modal-animation-enter-active {
+    opacity:1;
+    transition: 300ms;
+}
+
+.modal-animation-enter .modal-box{
+    transform: scale(0);
+}
+
+.modal-animation-enter-active .modal-box{
+    transform: scale(1);
+    transition: 300ms;
+}
+
+.modal-animation-exit {
+    opacity: 1;
+  }
+
+.modal-animation-exit-active {
+    opacity: 0;
+    transition:300ms;
+}
+
+.modal-animation-exit .modal-box{
+    transform: scale(1);
+}
+
+.modal-animation-exit-active .modal-box{
+    transform: scale(0);
+    transition: 300ms;
+}

@@ -1,0 +1,155 @@
+.student-wrap{
+    margin: 35px;
+    height: 200px;
+}
+
+.student-icon{
+    transition: 0.5s;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.student-icon:hover{
+    transform: scale(1.1); 
+}
+
+.insta-gravatar {
+    /*   背景をグラデーション */
+    background: linear-gradient( 45deg, #400080,  #d047d1, #ff0000);  background-size: 400% 400%;
+    /* グラデーションのアニメーション */
+    animation: gradient-anime 3s 0s ease infinite alternate none running;
+}
+
+/* グラデーションのアニメーション */
+@keyframes gradient-anime {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.student-wrap img {
+    height: 132px;
+    width: 132x;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.student-name{
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* モーダル */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-box {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 0;
+    width: 480px;
+    padding-bottom: 60px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.modal-animation-enter{
+    opacity: 0;
+}
+
+.modal-animation-enter-acitive{
+    opacity: 1;
+}
+
+.student-wrap-modal{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.student-wrap-modal img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.modal-introduction{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-introduction p {
+    color: #5876a3;
+    width: 384px;
+    line-height: 32px;
+    text-align: center;
+    margin: 36px auto 40px;
+}
+  
+.attend-select-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-close-btn {
+    font-size: 13px;
+    color: #8491a5;
+    width: 200px;
+    padding: 16px 0;
+    border: 0;
+    background-color: #f0f4f9;
+    cursor: pointer;
+}
+  
+.modal-close-btn:hover {
+    color: #8491a5;
+    background-color: #ccd9ea;
+}
+
+/* モーダル CSSTransition */
+.modal-animation-enter {
+    opacity:0;
+  }
+.modal-animation-enter-active {
+    opacity:1;
+    transition: 300ms;
+}
+
+.modal-animation-enter .modal-box{
+    transform: scale(0);
+}
+
+.modal-animation-enter-active .modal-box{
+    transform: scale(1);
+    transition: 300ms;
+}
+
+.modal-animation-exit {
+    opacity: 1;
+  }
+
+.modal-animation-exit-active {
+    opacity: 0;
+    transition:300ms;
+}
+
+.modal-animation-exit .modal-box{
+    transform: scale(1);
+}
+
+.modal-animation-exit-active .modal-box{
+    transform: scale(0);
+    transition: 300ms;
+}
